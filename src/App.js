@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
-import ThreeDModel from './components/ThreeDModel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -10,10 +9,6 @@ import './App.css';
 import { FaUserAlt, FaSignInAlt } from 'react-icons/fa';
 import lamborghiniLogo from './img/logo.png';
 import heroImage from './img/img1.webp';
-import performanceImage from './img/img1.webp';
-import designImage from './img/img1.webp';
-import technologyImage from './img/img1.webp';
-import customizationImage from './img/img1.webp';
 import ProtectedRoute from './components/ProtectedRoute';
 import Dashboard from './components/Dashboard';
 function HomePage() {
