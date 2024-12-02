@@ -1,0 +1,180 @@
+/* Fuente personalizada */
+@font-face {
+  font-family: 'Lamborghini';
+  src: url('fonts/LaMacchina.ttf') format('truetype'); /* Cambia esta ruta según la ubicación de tu archivo de fuente */
+}
+
+/* General */
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #000; /* Fondo negro para el footer */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* Navbar general */
+.navbar {
+  background: linear-gradient(180deg, #222222 0%, #141414 50%, #000 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+  height: 60px; /* Ajuste de altura para mayor visibilidad */
+  z-index: 10; /* Asegura que esté por encima del contenido */
+  position: sticky;
+  top: 0;
+}
+
+/* Estilo del logo y texto "Lamborghini" */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  font-family: 'Lamborghini', sans-serif;
+  font-size: 28px;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Animación suave */
+}
+
+.navbar-brand img {
+  height: 45px; /* Ajusta el tamaño del logo */
+  margin-right: 10px; /* Espacio entre logo y texto */
+}
+
+.navbar-brand:hover {
+  transform: translateX(-50%) scale(1.05); /* Efecto de zoom */
+}
+
+/* Botón de menú colapsable */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+/* Opciones del menú */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #ddd !important; /* Texto claro */
+  text-decoration: none !important; /* Sin subrayado */
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente al pasar el mouse */
+  color: #f0ad4e !important; /* Texto dorado en hover */
+}
+
+/* Fondo oscuro para menú hamburguesa en pantallas pequeñas */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95); /* Fondo oscuro completo */
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link {
+    padding: 10px; /* Espaciado más compacto en pantallas pequeñas */
+    border-radius: 3px;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover más claro */
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('img/img1.webp') center center/cover no-repeat;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: 'Lamborghini', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.three-d-container {
+  height: 500px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Secciones de contenido */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .three-d-container {
+    height: 300px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+}

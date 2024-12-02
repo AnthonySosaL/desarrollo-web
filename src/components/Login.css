@@ -1,0 +1,33 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f7fc; /* Fondo suave */
+  }
+  
+  .login-card {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,30 @@
+.dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard-header {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+  }
+  
+  .card {
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card .btn {
+    margin-top: 15px;
+  }
+  
